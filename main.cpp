@@ -1,14 +1,11 @@
-#define WINVER 0x0500
 #include <windows.h>
-#include <winuser.h>
-#include <stdio.h>
-#include <stdlib.h>
 #include "iostream"
 #include <dinput.h>
 
-
 int main()
 {
+    // Copyright - steamcommunity.com/id/Spelicious
+    SetConsoleTitle( TEXT("Trading Server Helper v0.3 by Spelicious"));
     std::cout << "-----------------------------------------------------" << std::endl;
     std::cout << "-----------------------------------------------------" << std::endl;
     std::cout << "               TradingServerHelper v0.3              " << std::endl;
@@ -25,24 +22,24 @@ int main()
     while (true) {
         timer++;
         Sleep(100);
-        if (GetAsyncKeyState(0x39)) { //EXIT
+        if (GetAsyncKeyState(0x39)) {
             std::cout << "Trading Helper will close in 3 seconds." << std::endl;
             Sleep(3000);
             return 0;
         }
-        if (GetAsyncKeyState(0x38)) { //xd
+        if (GetAsyncKeyState(0x38)) {
             std::cout << "Trading Helper is started!" << std::endl;
             stalking = 1;
         }
         /*
-        IF timer > 100 = 10 seconds + 5 seconds (to execute keys)
-        IF timer > 150 = 15 seconds + 5 seconds (to execute keys)
-        IF timer > 200 = 20 seconds + 5 seconds (to execute keys)
-        IF timer > 250 = 25 seconds + 5 seconds (to execute keys)
-        IF timer > 300 = 30 seconds + 5 seconds (to execute keys)
-        IF timer > 350 = 35 seconds + 5 seconds (to execute keys)
+        IF timer > 100 = 10 seconds + 2 seconds (to execute keys)
+        IF timer > 150 = 15 seconds + 2 seconds (to execute keys)
+        IF timer > 200 = 20 seconds + 2 seconds (to execute keys)
+        IF timer > 250 = 25 seconds + 2 seconds (to execute keys)
+        IF timer > 300 = 30 seconds + 2 seconds (to execute keys)
+        IF timer > 350 = 35 seconds + 2 seconds (to execute keys)
         */
-        if (timer > 150) {
+        if (timer > 130) {
             timer = 0;
             if (stalking) {
 
@@ -64,7 +61,6 @@ int main()
                 std::cout << "Bind '7' was pressed." << std::endl;
                 Sleep(2000);
                 std::cout << "--------------------------------------------------------" << std::endl;
-
             }
         }
     }
