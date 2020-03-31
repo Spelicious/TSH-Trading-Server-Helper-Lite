@@ -1,4 +1,4 @@
-Donators
+# Donators
 
 Here will be everyones profile who have made a donation with trade history link as a proof!
 
@@ -7,3 +7,6 @@ https://imgur.com/I5g6BEe
 
 2. ♃♆ - http://steamcommunity.com/profiles/76561198558785620 / Donated: 1 key
 https://imgur.com/iscXFpP
+
+
+Thank you for your donations! Helps alot :heart:
